@@ -1,20 +1,20 @@
 const calculateShoppingCart = (price, quantity, discount, tax) => {
-  if (typeof price !== "number" || price <= 0) {
+  if (typeof price !== "number" || price <= 0 || isNaN(price)) {
     console.log("Invalid price");
     return;
   }
 
-  if (typeof quantity !== "number" || quantity <= 0) {
+  if (typeof quantity !== "number" || quantity <= 0 || isNaN(quantity)) {
     console.log("Invalid quantity");
     return;
   }
 
-  if (typeof discount !== "number" || discount < 0 || discount > 100) {
+  if (typeof discount !== "number" || discount < 0 || discount > 100 || isNaN(discount)) {
     console.log("Invalid discount");
     return;
   }
 
-  if (typeof tax !== "number" || tax < 0) {
+  if (typeof tax !== "number" || tax < 0 || isNaN(tax)) {
     console.log("Invalid tax");
     return;
   }
