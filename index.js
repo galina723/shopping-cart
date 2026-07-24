@@ -29,3 +29,7 @@ const calculateShoppingCart = (price, quantity, discount, tax) => {
 calculateShoppingCart(100, 2, 10, 8);
 calculateShoppingCart(350, 5, 20, 10);
 calculateShoppingCart(50, 10, 0, 5);
+
+calculateShoppingCart(-100, 2, 10, 8);
+calculateShoppingCart(100, 0, 10, 8);
+calculateShoppingCart(100, 2, 150, 8);
