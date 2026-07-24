@@ -27,3 +27,5 @@ const calculateShoppingCart = (price, quantity, discount, tax) => {
   console.log(`The money you have to pay: ${totalPrice}`);
 };
 calculateShoppingCart(100, 2, 10, 8);
+calculateShoppingCart(350, 5, 20, 10);
+calculateShoppingCart(50, 10, 0, 5);
